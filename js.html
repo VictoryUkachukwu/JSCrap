@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    h1#hey {
+                              animation-name: hey;
+                              animation-duration: 1s;
+                              animation-iteration-count: infinite;
+                    }
+
+                    @keyframes hey {
+                              0% {color: red;}
+                              25% {color: blue;}
+                              50% {color: green;}
+                              75% {color: yellow;}
+                              100% {color: deeppink;}
+                    }
+          </style>
+</head>
+<body>
+          <h1 id="hey">Click below to get free cash!!!</h1>
+
+          <button type="button" onclick="niceTry()"> Click here!</button>
+
+          <hr><hr><hr><br>
+
+          <h2>JavaScript or nah</h2>
+          <div id="x">
+	          <p>How old is John?</p>
+	          <p id="demo" style="display: none;">John is 50 years old.</p>
+          </div>
+
+          <button type="button" onclick="document.getElementById('demo').style.display='block'"> Check Answer </button>
+          <button type="button" onclick="document.getElementById('demo').style.display='none'"> Close </button>
+
+          <hr><hr><hr><br>
+          <h2> Display preferences</h2>
+          <p id="disp"></p>
+          <button type="button" onclick="displayAscending()">Ascending</button>
+          <button type="button" onclick="displayDescending()">Descending</button>
+
+          <script>
+                    function niceTry() {
+                              document.getElementById("hey").innerHTML = "Ogbeni, go and work!"
+                    }
+
+                    var dates = ["1990", "1581", "1912", "2003", "1894", "1877", "2022",]
+                    document.getElementById("disp").innerHTML = dates;
+                    function displayAscending() {
+                              dates.sort();
+                              document.getElementById("disp").innerHTML = dates;
+                    }
+                    function displayDescending() {
+                              dates.sort;
+                              dates.reverse();
+                              document.getElementById("disp").innerHTML = dates;
+                    }
+          </script>
+
+</body>
+</html>

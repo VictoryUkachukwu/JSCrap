@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Test JS</title>
+          <style>
+                    body {
+                              background: orchid;
+                              color: #3F0000;
+                    }
+
+                    h1 {
+                              text-align: center;
+                    }
+
+                    div {
+                              background: whitesmoke;
+                              width: 50%;
+                              padding: 20px;
+                              margin-left: auto;
+                              margin-right: auto;
+                              text-align: center;
+                    }
+          </style>
+</head>
+<body>
+          <h1> JS TRIAL</h1>
+          <div>
+          <p> (innerHTML Display)</p>
+          <p id="hey"></p>
+          </div>
+          <br>
+
+          <div>
+          <p> (innerHTML Display with Button)</p>
+          <p id="hiya"> JavaScript is ...</p>
+          <button type="button" onclick="document.getElementById('hiya').innerHTML = 'AWESOME!!!'">Answer</button>
+          </div><br>
+
+          <div>
+                    <p> (console.log Display)</p>
+                    <p> Go to console to view result.</p>
+          </div><br>
+
+          <div>
+                    <p> (window.alert Display with Button)</p>
+          <button type="button" onclick="window.alert('We Love You!')">What do we say to JavaScript?</button>
+          </div><br>
+
+          <div>
+                    <p> (document.write Display)<br> (window.alert Display)</p>
+<script>
+          // lots of code in here
+          document.getElementById("hey").innerHTML = "Welcome Aboard!"
+          document.write(2+2);
+          window.alert("Hello JavaScript!");
+          console.log(5*5);
+</script>
+</div><br>
+
+
+
+
+
+</body>
+</html>
